@@ -8,7 +8,7 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
-    console.log('A user connected');
+    console.log('A player connected');
 
     socket.on('start_Game',function(gamePlayer){
         console.log('Welcome: ' + gamePlayer);

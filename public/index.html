@@ -84,7 +84,7 @@
 
 //Event Listeners
             $(function(){
-                var socket = io();
+                var socket = io.connect();
                 $('form').submit(function(e){
                     e.preventDefault();
                     let playerObject = {};

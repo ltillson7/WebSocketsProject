@@ -1,0 +1,125 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#beccbf ;
+  animation: background-color-change 10s infinite;
+}
+h1{
+  color:#1c4027;
+}
+#userDiv{
+  background: #dddddd;
+  border: 3px, solid, black;
+  margin:20px;
+}
+.clear{
+  clear:both;
+}
+.nav{
+  text-decoration: none;
+  list-style-type: none;
+  color:black;
+}
+#title{
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+#main-nav{
+  position: relative;
+  top: 130px;
+  font-size:1.3em;
+}
+a{
+  color:#1c4027;
+  text-decoration:none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color:white;
+}
+.circle {
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  border:3px solid black;
+  display:inline-block;
+  color:#fff;
+  position:relative;
+  left:800px;
+  transition: all 1s;
+  animation: background-color-change 10s infinite;
+    }
+.exe{
+  font-size:2.2em;
+  position:relative;
+  right:250px;
+  transition: all 1s;
+  }
+#theExe:hover .exe{
+  transform:translate(1050px,0); 
+  }
+#OH:hover .circle{
+  transform:translate(-1050px,0);
+}
+.grid-container {
+    margin:35px;
+    widows:500px;
+    height:500px;
+    display: grid;
+    background-color: #dddddd;
+    grid-gap:3px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-auto-rows:20% 20% 20% 20% 20%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  /* I found a few of these attributes on codepen as well*/
+  .box {
+    position: relative;
+    background-color: #4c4c4c;
+    width: 40px;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    cursor: help;
+  }
+
+  .box.x::before{
+    content: "X";
+  }
+  .box.o::before{
+    content: "O";
+  }
+
+
+@keyframes background-color-change{
+  0%{
+      background-color:#beccbf;
+  }
+  10%{
+      background-color: #97c998; 
+  }
+  35%{
+    background-color: #48745a;
+  }
+  50% {
+      background-color: #1f5628;
+  }
+  75% {
+      background-color: #48745a;
+  }
+  100% {
+      background-color: #97c998;
+  }
+}
